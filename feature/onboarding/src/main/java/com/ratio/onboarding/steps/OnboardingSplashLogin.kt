@@ -200,7 +200,7 @@ fun BoxWithConstraintsScope.OnboardingSplashLogin(
                 ratioContext = ratioContext,
                 percentTransition = percentTransition
             ),
-            text = stringResource(R.string.your_personal_money_manager),
+            text = stringResource(R.string.app_motto),
             style = UI.typo.b2.style(
                 color = UI.colors.pureInverse,
                 fontWeight = FontWeight.SemiBold

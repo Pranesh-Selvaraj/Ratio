@@ -3,8 +3,12 @@ name: PR description check
 on:
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   pr-description-check:
+    name: PR description
     runs-on: ubuntu-latest
     steps:
       - name: Checkout GIT
@@ -13,8 +17,8 @@ jobs:
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
-          distribution: 'adopt'
-          java-version: '18'
+          distribution: 'temurin'
+          java-version: '17'
 
       - name: Gradle cache
         uses: gradle/actions/setup-gradle@v4

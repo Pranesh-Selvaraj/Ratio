@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: '0 8 * * *'
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   upgrade-gradle-wrapper:
     runs-on: ubuntu-latest
@@ -23,8 +27,8 @@ jobs:
       - name: Setup Java SDK
         uses: actions/setup-java@v4
         with:
-          distribution: 'adopt'
-          java-version: '18'
+          distribution: 'temurin'
+          java-version: '17'
 
       - name: Upgrade Gradle Wrapper
         run: ./gradlew upgradeGradleWrapperRatio

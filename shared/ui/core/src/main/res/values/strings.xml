@@ -163,7 +163,8 @@
     <string name="add_categories">Add categories</string>
     <string name="suggestions">Suggestions</string>
     <string name="set">Set</string>
-    <string name="your_personal_money_manager">Your personal money manager</string>
+    <string name="app_motto">Know your money</string>
+    <string name="your_personal_money_manager">Know your money</string>
     <string name="opensource">#opensource</string>
     <string name="google_error_try_again">Error. Try again: %1$s</string>
     <string name="google_signing_in">Signing in…</string>
