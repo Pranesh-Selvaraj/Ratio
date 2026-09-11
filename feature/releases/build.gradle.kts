@@ -1,9 +1,9 @@
 plugins {
-    id("ivy.feature")
+    id("ratio.feature")
 }
 
 android {
-    namespace = "com.ivy.releases"
+    namespace = "com.ratio.releases"
 }
 
 dependencies {

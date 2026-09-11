@@ -1,9 +1,9 @@
 plugins {
-    id("ivy.feature")
+    id("ratio.feature")
 }
 
 android {
-    namespace = "com.ivy.data.model.testing"
+    namespace = "com.ratio.data.model.testing"
 }
 
 dependencies {

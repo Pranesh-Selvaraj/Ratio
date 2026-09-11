@@ -1,9 +1,9 @@
 plugins {
-    id("ivy.widget")
+    id("ratio.widget")
 }
 
 android {
-    namespace = "com.ivy.widget.transaction"
+    namespace = "com.ratio.widget.transaction"
 }
 
 dependencies {

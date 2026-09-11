@@ -1,7 +1,7 @@
 plugins {
-    id("ivy.feature")
+    id("ratio.feature")
 }
 
 android {
-    namespace = "com.ivy.base"
+    namespace = "com.ratio.base"
 }

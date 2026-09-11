@@ -1,10 +1,10 @@
 plugins {
-    id("ivy.feature")
-    id("ivy.room")
+    id("ratio.feature")
+    id("ratio.room")
 }
 
 android {
-    namespace = "com.ivy.legacy"
+    namespace = "com.ratio.legacy"
 }
 
 dependencies {
@@ -17,7 +17,6 @@ dependencies {
 
     implementation(libs.bundles.activity)
     implementation(libs.bundles.opencsv)
-    implementation(libs.bundles.firebase)
     implementation(libs.bundles.ktor)
     implementation(libs.androidx.work)
     implementation(libs.datastore)

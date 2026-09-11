@@ -1,10 +1,10 @@
 plugins {
-    id("ivy.script")
+    id("ratio.script")
     application
 }
 
 application {
-    mainClass = "ivy.automate.pr.MainKt"
+    mainClass = "ratio.automate.pr.MainKt"
 }
 
 dependencies {

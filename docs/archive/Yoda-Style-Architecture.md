@@ -1,8 +1,8 @@
-# Ivy's Ways, These Are
+# Ratio's Ways, These Are
 
-[![PRs welcome!](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Ivy-Apps/ivy-wallet/blob/main/CONTRIBUTING.md)
-[![GitHub Repo stars](https://img.shields.io/github/stars/Ivy-Apps/ivy-wallet?style=social)](https://github.com/Ivy-Apps/ivy-wallet/stargazers)
-[![Fork Ivy Wallet](https://img.shields.io/github/forks/Ivy-Apps/ivy-wallet?logo=github&style=social)](https://github.com/Ivy-Apps/ivy-wallet/fork)
+[![PRs welcome!](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Pranesh-Selvaraj/Ratio/blob/main/CONTRIBUTING.md)
+[![GitHub Repo stars](https://img.shields.io/github/stars/Pranesh-Selvaraj/Ratio?style=social)](https://github.com/Pranesh-Selvaraj/Ratio/stargazers)
+[![Fork Ratio](https://img.shields.io/github/forks/Pranesh-Selvaraj/Ratio?logo=github&style=social)](https://github.com/Pranesh-Selvaraj/Ratio/fork)
 
 Solutions short and working, must be. Break the app, they must not.
 
@@ -42,7 +42,7 @@ Reason, straightforward it is. More strength and simplicity, the Compose runtime
 - Power of `LaunchedEffect`, `remember`, and all Compose gifts, you have.
 - Simpler and less tangled code, this gives.
 
-> **A tip for you:** In Ivy Wallet, the `ComposeViewModel` base inherit, and set you are.
+> **A tip for you:** In Ratio, the `ComposeViewModel` base inherit, and set you are.
 
 ## Architecture Overview
 
@@ -76,7 +76,7 @@ Each screen, like its own planet it is. Expanding it might, with tales of code a
 
 **Simple, our modularization path is:**
 
-- Shared `:ivy-*` modules, a few we possess.
+- Shared `:ratio-*` modules, a few we possess.
 - With these modules, shared wisdom in your screens you harness.
 - Each screen/feature, its own realm it claims, like `:screen-home` or `:feature-something`.
 
@@ -87,16 +87,16 @@ To birth a new module... Invoke this chant in your terminal, you must:
 ./scripts/create_module.sh screen-something
 ```
 
-> Crafting a screen, you are? Inscribe its essence, you must, in `Screens.kt` (:ivy-navigation). Weave its spirit, you shall, in `IvyNavGraph.kt` (:app).
+> Crafting a screen, you are? Inscribe its essence, you must, in `Screens.kt` (:ratio-navigation). Weave its spirit, you shall, in `RatioNavGraph.kt` (:app).
 
 ## Wisdoms from Far and Wide
 
 ["The Grug Brained Developer"](https://grugbrain.dev/), seek this scroll, you must. Tales of old engineering and fun, within it rests.
 
-Legacy code, surround us it does. To restore balance to the code force, visit ["devexp" issues](https://github.com/Ivy-Apps/ivy-wallet/labels/devexp) you must.
+Legacy code, surround us it does. To restore balance to the code force, visit ["devexp" issues](https://github.com/Pranesh-Selvaraj/Ratio/labels/devexp) you must.
 
 ## Uncertain, you are?
 
-Seek knowledge in the "Development" realm of our [Telegram sanctuary](https://t.me/+ETavgioAvWg4NThk), you must. There, answers await.
+Seek knowledge in the "Development" realm of our [Telegram sanctuary](https://github.com/Pranesh-Selvaraj/Ratio/issues), you must. There, answers await.
 
-[![Telegram Group](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/+ETavgioAvWg4NThk)
+[![Telegram Group](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://github.com/Pranesh-Selvaraj/Ratio/issues)

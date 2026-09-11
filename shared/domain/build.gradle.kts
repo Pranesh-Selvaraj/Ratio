@@ -1,11 +1,11 @@
 plugins {
-    id("ivy.feature")
-    id("ivy.integration.testing")
-    id("ivy.room")
+    id("ratio.feature")
+    id("ratio.integration.testing")
+    id("ratio.room")
 }
 
 android {
-    namespace = "com.ivy.domain"
+    namespace = "com.ratio.domain"
 }
 
 dependencies {

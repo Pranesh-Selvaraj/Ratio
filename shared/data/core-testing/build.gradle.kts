@@ -1,10 +1,10 @@
 plugins {
-    id("ivy.feature")
-    id("ivy.room")
+    id("ratio.feature")
+    id("ratio.room")
 }
 
 android {
-    namespace = "com.ivy.data.testing"
+    namespace = "com.ratio.data.testing"
 }
 
 dependencies {

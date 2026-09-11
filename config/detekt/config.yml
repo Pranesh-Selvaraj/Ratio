@@ -1102,7 +1102,7 @@ Compose:
   ViewModelInjection:
     active: false
 
-IvyExplicit:
+RatioExplicit:
   DataClassFunctions:
     active: true
   DataClassDefaultValues:

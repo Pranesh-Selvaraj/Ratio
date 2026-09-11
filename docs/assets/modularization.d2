@@ -1,11 +1,11 @@
-ivy-res: ":ivy-resources" {
+ratio-res: ":ratio-resources" {
   "Shared resources"
   "strings and drawables"
 }
-ivy-base: ":ivy-base" {
+ratio-base: ":ratio-base" {
   "Code shared everywhere"
 }
-ivy-data: ":ivy-data" {
+ratio-data: ":ratio-data" {
   "Data Layer" {
     style {
       fill: blue
@@ -14,7 +14,7 @@ ivy-data: ":ivy-data" {
   }
   "CRUD: Repositories & DataSources"
 }
-ivy-domain: ":ivy-domain" {
+ratio-domain: ":ratio-domain" {
   "Domain Layer" {
     style {
       fill: blue
@@ -23,15 +23,15 @@ ivy-domain: ":ivy-domain" {
   }
   "Business logic & rules"
 }
-ivy-common-ui: ":ivy-common-ui" {
+ratio-common-ui: ":ratio-common-ui" {
   "UI components bundled with domain logic"
 }
-ivy-nav: ":ivy-navigation" {
+ratio-nav: ":ratio-navigation" {
   "Screen destinations"
   "Navigation logic"
 }
-ivy-design: ":ivy-design" {
-  "Ivy's design system"
+ratio-design: ":ratio-design" {
+  "Ratio's design system"
 }
 screens: ":screen/feature" {
   "UI Layer" {
@@ -50,18 +50,18 @@ app: ":app" {
   "Wires the implementation of all screens"
 }
 
-ivy-data -> ivy-base
-ivy-domain -> ivy-data
-ivy-domain -> ivy-base
+ratio-data -> ratio-base
+ratio-domain -> ratio-data
+ratio-domain -> ratio-base
 
-ivy-design -> ivy-res
-ivy-nav -> ivy-domain
-ivy-nav -> ivy-design
+ratio-design -> ratio-res
+ratio-nav -> ratio-domain
+ratio-nav -> ratio-design
 
-ivy-common-ui -> ivy-nav
+ratio-common-ui -> ratio-nav
 
-screens -> ivy-common-ui
-screens -> ivy-nav
-screens -> ivy-res
+screens -> ratio-common-ui
+screens -> ratio-nav
+screens -> ratio-res
 
 app -> screens

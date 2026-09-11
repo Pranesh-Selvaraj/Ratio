@@ -1,5 +1,5 @@
 plugins {
-    id("ivy.script")
+    id("ratio.script")
 }
 
 dependencies {
