@@ -87,7 +87,6 @@ Make sure to check out our short **[Developer Guidelines 🏗️](docs/Guideline
 ### Testing
 - [JUnit4](https://github.com/junit-team/junit4) (test framework, compatible with Android)
 - [Kotest](https://kotest.io/) (unit test assertions)
-- [Paparazzi](https://github.com/cashapp/paparazzi) (screenshot testing)
 
 ### Local Persistence
 - [DataStore](https://developer.android.com/topic/libraries/architecture/datastore) (key-value storage)
@@ -106,8 +105,6 @@ Make sure to check out our short **[Developer Guidelines 🏗️](docs/Guideline
 
 ### Other
 - [Timber](https://github.com/JakeWharton/timber) (logging)
-- [Detekt](https://github.com/detekt/detekt) (linter)
-- [Ktlint](https://github.com/pinterest/ktlint) (linter)
 - [Slack's compose-lints](https://slackhq.github.io/compose-lints/) (linter)
 
 ## Contribute

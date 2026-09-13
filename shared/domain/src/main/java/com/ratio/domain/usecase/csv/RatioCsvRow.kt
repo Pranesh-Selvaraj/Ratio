@@ -10,8 +10,6 @@ import com.ratio.data.model.primitive.NotBlankTrimmedString
 import com.ratio.data.model.primitive.PositiveDouble
 import java.time.Instant
 
-// TODO: Fix Ratio Explicit detekt false-positives
-@SuppressWarnings("DataClassTypedIDs")
 data class RatioCsvRow(
     val date: Instant?,
     val title: NotBlankTrimmedString?,

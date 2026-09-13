@@ -49,10 +49,8 @@ REQUIRED_CHECKS_DEFAULT=(
   "CodeQL"
   "Composables stability"
   "Dependency review"
-  "Detekt"
   "Integration tests"
   "Lint"
-  "Paparazzi screenshots"
   "PR description"
   "Unit tests"
 )

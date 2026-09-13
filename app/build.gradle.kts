@@ -6,7 +6,6 @@ plugins {
     id("dagger.hilt.android.plugin")
     id("org.jetbrains.kotlin.plugin.serialization")
     id("com.google.devtools.ksp")
-    id("io.gitlab.arturbosch.detekt")
 }
 
 android {

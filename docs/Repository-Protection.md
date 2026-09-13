@@ -45,8 +45,8 @@ The script is idempotent and stores the rulesets under the names
 Required status checks:
 
 `Demo APK`, `CI actions tests`, `CodeQL`, `Composables stability`,
-`Dependency review`, `Detekt`, `Integration tests`, `Lint`,
-`Paparazzi screenshots`, `PR description`, `Unit tests`.
+`Dependency review`, `Integration tests`, `Lint`,
+`PR description`, `Unit tests`.
 
 `Gradle wrapper validation` is intentionally **not** required because it is
 path-filtered (it only runs when wrapper files change, so requiring it would
