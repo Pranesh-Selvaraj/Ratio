@@ -13,11 +13,11 @@
 #   GH_TOKEN=<token> ./scripts/github-protections.sh
 #
 # Token requirements (either one):
-#   * classic PAT with scopes: repo, workflow
-#   * fine-grained PAT with repository permissions:
+#   * classic PAT with the `repo` scope, or
+#   * fine-grained PAT with a single repository permission:
 #       Administration: Read and write
-#       Actions:        Read and write
-#       Contents:       Read and write
+#     (Metadata: Read is added automatically; every setting this script
+#     touches is admin-level.)
 #
 # Environment overrides:
 #   BRANCH_NAME                  default: main

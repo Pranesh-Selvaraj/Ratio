@@ -18,9 +18,10 @@ GH_TOKEN=<token> ./scripts/github-protections.sh
 
 Token requirements (either one):
 
-- classic PAT with scopes `repo` and `workflow`, or
-- fine-grained PAT with **Administration: Read and write**, **Actions: Read and
-  write**, **Contents: Read and write**.
+- classic PAT with the `repo` scope, or
+- fine-grained PAT with a single repository permission:
+  **Administration: Read and write** (`Metadata: Read` is added
+automatically). Every setting the script touches is admin-level.
 
 The script is idempotent and stores the rulesets under the names
 `main-branch-protection` and `release-tag-protection`. Verify the result at
