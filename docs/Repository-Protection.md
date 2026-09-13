@@ -84,7 +84,6 @@ Only the admin can deliberately bypass the rule.
 - CodeQL (`codeql.yml`) runs code scanning on pushes, PRs and weekly.
 - Dependency review (`dependency-review.yml`) fails PRs that add high-severity
   vulnerable dependencies.
-- OpenSSF Scorecard (`scorecard.yml`) audits the repo weekly.
 - `.gitignore` blocks accidental commits of release signing material
   (`sign.jks`, `sign.jks.b64`, `google-play-console-user.json`,
   `play_config.json.b64`).
@@ -94,13 +93,7 @@ Only the admin can deliberately bypass the rule.
 | Bot | Trigger | What it does |
 | --- | --- | --- |
 | **dependabot[bot]** (`.github/dependabot.yml`) | Weekly | Opens grouped PRs bumping Gradle dependencies (`dependabot/gradle/*`) and GitHub Actions versions (`dependabot/github_actions/*`). Actions are updated to new commit SHAs. |
-| **github-actions[bot] — Version bump** (`version_bump.yml`) | Sundays 00:00 UTC + manual | Proposes a date-based `version-name` and incremented `version-code` in `gradle/libs.versions.toml` via a PR on a `version-bump-*` branch labeled `auto-update`. Merging it is a human decision; it releases nothing by itself. |
-| **github-actions[bot] — Gradle Wrapper Upgrade** (`upgrade-gradle-wrapper.yml`) | Daily 08:00 UTC + manual | Runs `./gradlew upgradeGradleWrapperRatio` and commits/opens a PR to keep the Gradle wrapper current. |
-| **actions/stale** (`stale.yml`) | Daily 08:00 UTC + manual | Marks issues stale after 30 days (closed after 7 more) and PRs stale after 2 days (closed after 1 more). Issues/PRs labeled `keep`, `P0` or `bug` are exempt. |
-| **Issue created automation** (`issue_created.yml` → `ci-actions/issue-create-comment`) | New issue | Posts a thank-you comment with the contribution guidelines and tags the admin for review/approval. |
-| **Issue assign automation** (`issue_assign.yml` → `ci-actions/issue-assign`) | New issue comment | Parses the comment for a "take this issue" intention and auto-assigns the commenter, but only if the issue has the approved label and is not already assigned. Otherwise replies that it is already taken or not approved. |
 | **CodeQL** (`codeql.yml`) | Push to `main`, PR, weekly | Static security/quality analysis of the Kotlin code; results go to GitHub code scanning. |
-| **OpenSSF Scorecard** (`scorecard.yml`) | Push to `main`, weekly, branch protection changes | Audits supply-chain and repo security practices; results are published and uploaded as SARIF. |
 | **Release** (`release.yml`) | Manual (`workflow_dispatch`) | Builds the FOSS APK from source (`assembleDemo`) and attaches it to a GitHub Release tagged `v<version>-<code>`. No Google Play (or any store) publishing and no signing secrets required. |
 
 ## Maintenance notes

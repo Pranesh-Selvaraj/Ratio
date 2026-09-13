@@ -26,15 +26,6 @@ jobs:
       - name: Gradle cache
         uses: gradle/actions/setup-gradle@ed408507eac070d1f99cc633dbcf757c94c7933a # v4
 
-      - name: Test the CI actions "base"
-        run: ./gradlew :ci-actions:base:test
-
-      - name: Test the CI "issue-assign" action
-        run: ./gradlew :ci-actions:issue-assign:test
-
-      - name: Test the CI "issue-create-comment" action
-        run: ./gradlew :ci-actions:issue-create-comment:test
-
       - name: Test the CI "compose_stability" action
         run: ./gradlew :ci-actions:compose-stability:test
 
