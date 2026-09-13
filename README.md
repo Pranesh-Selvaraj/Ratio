@@ -35,6 +35,21 @@ A money management app can help you answer these questions.
 > To support this free open source project, please give it a star. ⭐
 > This means a lot to us. Thank you so much! [![GitHub Repo stars](https://img.shields.io/github/stars/Pranesh-Selvaraj/Ratio?style=social)](https://github.com/Pranesh-Selvaraj/Ratio/stargazers)
 
+## Download
+
+Ratio is an open source project and is **not published on the Google Play Store**
+(or any other app store).
+
+- **Latest APK** — [GitHub Releases](https://github.com/Pranesh-Selvaraj/Ratio/releases).
+  Builds are produced from source by GitHub Actions and signed with the
+  project's public debug keystore (standard for FOSS Android builds).
+- **Every push** also produces a demo APK under
+  [Actions → APK](https://github.com/Pranesh-Selvaraj/Ratio/actions/workflows/apk.yml).
+- **Build it yourself** — see [Project Requirements](#project-requirements) below.
+
+Because the APK is installed outside a store, Android may warn you or require
+enabling "Install unknown apps" for your browser/file manager.
+
 ## Project Requirements
 
 - Java 17+
@@ -87,7 +102,7 @@ Make sure to check out our short **[Developer Guidelines 🏗️](docs/Guideline
 - [Gradle convention plugins](https://docs.gradle.org/current/samples/sample_convention_plugins.html) (build logic)
 - [Gradle version catalogs](https://developer.android.com/build/migrate-to-catalogs) (dependencies versions)
 - [GitHub Actions](https://github.com/Pranesh-Selvaraj/Ratio/actions) (CI/CD)
-- [Fastlane](https://fastlane.tools/) (uploads the app to the Google Play Store)
+- [GitHub Releases](https://github.com/Pranesh-Selvaraj/Ratio/releases) (FOSS APK distribution — no Google Play)
 
 ### Other
 - [Timber](https://github.com/JakeWharton/timber) (logging)

@@ -51,7 +51,7 @@ body:
     attributes:
       label: App version
       description: Specify the exact version of the Ratio app. You can see it on the top right of the Settings screen.
-      placeholder: v2024.06.07 (181) from Google Play
+      placeholder: e.g. v2026.09.13 (207) from GitHub Releases
     validations:
       required: true
   - type: input

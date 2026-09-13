@@ -56,7 +56,7 @@ leave unrelated PRs stuck). Update the list in
 ### Release tag ruleset (`release-tag-protection`)
 
 Tags matching `v*` cannot be deleted or moved. New tags can still be created by
-the release workflow, which is how `internal_release.yml` publishes versions.
+the release workflow, which is how `release.yml` publishes versions.
 Only the admin can deliberately bypass the rule.
 
 ### GitHub Actions hardening
@@ -93,14 +93,14 @@ Only the admin can deliberately bypass the rule.
 | Bot | Trigger | What it does |
 | --- | --- | --- |
 | **dependabot[bot]** (`.github/dependabot.yml`) | Weekly | Opens grouped PRs bumping Gradle dependencies (`dependabot/gradle/*`) and GitHub Actions versions (`dependabot/github_actions/*`). Actions are updated to new commit SHAs. |
-| **github-actions[bot] — Automatic Release** (`automatic_release.yml`) | Sundays 00:00 UTC + manual | Bumps `version-name` (date) and `version-code` in `gradle/libs.versions.toml` and opens a PR on a timestamped branch (e.g. `auto-update-20260913042331`) labeled `auto-update`. This is the only bot that changes app versioning. |
+| **github-actions[bot] — Version bump** (`version_bump.yml`) | Sundays 00:00 UTC + manual | Proposes a date-based `version-name` and incremented `version-code` in `gradle/libs.versions.toml` via a PR on a `version-bump-*` branch labeled `auto-update`. Merging it is a human decision; it releases nothing by itself. |
 | **github-actions[bot] — Gradle Wrapper Upgrade** (`upgrade-gradle-wrapper.yml`) | Daily 08:00 UTC + manual | Runs `./gradlew upgradeGradleWrapperRatio` and commits/opens a PR to keep the Gradle wrapper current. |
 | **actions/stale** (`stale.yml`) | Daily 08:00 UTC + manual | Marks issues stale after 30 days (closed after 7 more) and PRs stale after 2 days (closed after 1 more). Issues/PRs labeled `keep`, `P0` or `bug` are exempt. |
 | **Issue created automation** (`issue_created.yml` → `ci-actions/issue-create-comment`) | New issue | Posts a thank-you comment with the contribution guidelines and tags the admin for review/approval. |
 | **Issue assign automation** (`issue_assign.yml` → `ci-actions/issue-assign`) | New issue comment | Parses the comment for a "take this issue" intention and auto-assigns the commenter, but only if the issue has the approved label and is not already assigned. Otherwise replies that it is already taken or not approved. |
 | **CodeQL** (`codeql.yml`) | Push to `main`, PR, weekly | Static security/quality analysis of the Kotlin code; results go to GitHub code scanning. |
 | **OpenSSF Scorecard** (`scorecard.yml`) | Push to `main`, weekly, branch protection changes | Audits supply-chain and repo security practices; results are published and uploaded as SARIF. |
-| **Internal Release** (`internal_release.yml`) | Push to `main` whose commit message contains `Automatic release` (i.e. the auto-release PR merge), or manual | Builds the signed AAB/APK, pushes the `v<version>-<code>` tag, publishes to Google Play internal testing (only if `PUBLISH_TO_PLAY == 'true'`) and creates a GitHub Release. This automation holds the signing and Play credentials, which is why `main` is protected and only bot-authored "Automatic release" commits can trigger it. |
+| **Release** (`release.yml`) | Manual (`workflow_dispatch`) | Builds the FOSS APK from source (`assembleDemo`) and attaches it to a GitHub Release tagged `v<version>-<code>`. No Google Play (or any store) publishing and no signing secrets required. |
 
 ## Maintenance notes
 
@@ -110,10 +110,11 @@ Only the admin can deliberately bypass the rule.
   GitHub does not let you approve your own PR and you would lock yourself out.
 - **Signed commits:** set `REQUIRE_SIGNED_COMMITS=1` only after every committer
   (including local development) signs their commits.
-- **Release secrets:** for stronger isolation, move the signing/Play secrets to
-  a `release` environment with required reviewers and add
-  `environment: release` to the jobs in `internal_release.yml`. This is not
-  scripted because environment secrets must be re-entered by hand.
+- **Proper release signing (optional):** GitHub Releases currently ship a
+  debug-signed FOSS build so no secrets are needed. If you ever want a
+  keystore-signed APK, add the `SIGNING_*` repository secrets, switch the build
+  step in `release.yml` to `./gradlew assembleRelease`, and (if desired) move
+  the secrets into an environment with required reviewers.
 - **Rulesets vs classic branch protection:** this repo uses rulesets. Classic
   branch protection is left untouched; do not enable both for the same branch
   to avoid confusing, conflicting requirements.

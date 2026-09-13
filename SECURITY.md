@@ -35,8 +35,11 @@ Out of scope:
 
 ## Security practices in this repository
 
-- **Signed releases only.** Release AABs/APKs are signed with a private keystore whose credentials are stored as GitHub Actions secrets and are never committed.
-- **Least-privilege CI.** Workflows run with minimal `GITHUB_TOKEN` permissions; third-party actions are pinned to major versions and reviewed.
+- **FOSS release builds.** Releases are built from source in GitHub Actions and
+  signed with the project's public debug keystore — standard practice for open
+  source Android apps. They are distributed only via GitHub Releases and are
+  never uploaded to Google Play or any other app store.
+- **Least-privilege CI.** Workflows run with minimal `GITHUB_TOKEN` permissions; third-party actions are pinned to full commit SHAs (enforced by a repository ruleset) and reviewed.
 - **Code scanning.** CodeQL runs on every push/PR and weekly; results are published under the repository's Security tab.
 - **Supply chain.** Dependabot version updates and security alerts are enabled; dependency review runs on pull requests; the Gradle wrapper is validated on changes.
 - **Secret scanning.** GitHub secret scanning and push protection are enabled for this repository.

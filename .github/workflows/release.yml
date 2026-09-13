@@ -1,0 +1,68 @@
+name: Release
+
+# Ratio is distributed as source code and GitHub Releases only.
+# There is no Google Play (or other store) publishing step.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  github_release:
+    name: GitHub release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout GIT
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Java SDK
+        uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3 # v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Gradle cache
+        uses: gradle/actions/setup-gradle@ed408507eac070d1f99cc633dbcf757c94c7933a # v4
+
+      - name: Read version from libs.versions.toml
+        id: version
+        run: |
+          VERSION_NAME=$(grep 'version-name =' gradle/libs.versions.toml | awk -F'=' '{print $2}' | tr -d ' "')
+          VERSION_CODE=$(grep 'version-code =' gradle/libs.versions.toml | awk -F'=' '{print $2}' | tr -d ' "')
+          echo "TAG_NAME=v${VERSION_NAME}-${VERSION_CODE}" >> "$GITHUB_OUTPUT"
+
+      - name: Build APK (FOSS build)
+        run: ./gradlew assembleDemo
+
+      - name: Create and push tag
+        run: |
+          TAG="${{ steps.version.outputs.TAG_NAME }}"
+          if git rev-parse "$TAG" >/dev/null 2>&1; then
+            echo "Tag $TAG already exists; reusing it."
+          else
+            git tag "$TAG"
+            git push origin "$TAG"
+          fi
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2
+        with:
+          tag_name: ${{ steps.version.outputs.TAG_NAME }}
+          name: Release ${{ steps.version.outputs.TAG_NAME }}
+          draft: false
+          prerelease: false
+          body: |
+            Ratio is a free and open source app distributed as **source code** and via
+            **GitHub Releases** only. It is **not** published on the Google Play Store
+            or any other app store.
+
+            This APK is built from source in GitHub Actions and signed with the
+            project's public Android debug keystore. That is standard for open source
+            Android builds and means the app can be installed and updated from
+            GitHub Releases without any store account.
+          files: |
+            app/build/outputs/apk/demo/app-demo.apk

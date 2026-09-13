@@ -1,1 +1,0 @@
-Ratio periodic release, refer to (https://github.com/Pranesh-Selvaraj/Ratio/releases) for changelog. If you find any issues, please report them in our GitHub repository.

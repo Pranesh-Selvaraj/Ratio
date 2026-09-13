@@ -1,4 +1,4 @@
-name: Automatic Release
+name: Version bump
 
 on:
   schedule:
@@ -39,18 +39,18 @@ jobs:
       - name: Set branch name
         id: set_branch_name
         run: |
-          BRANCH_NAME="auto-update-$(date +'%Y%m%d%H%M%S')"
+          BRANCH_NAME="version-bump-$(date +'%Y%m%d%H%M%S')"
           echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
 
       - name: Create a Pull Request
         uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Automatic release: v${{ env.NEW_VERSION_NAME }} (${{ env.NEW_VERSION_CODE }})"
+          commit-message: "Version bump: v${{ env.NEW_VERSION_NAME }} (${{ env.NEW_VERSION_CODE }})"
           base: "main"
           branch: ${{ env.BRANCH_NAME }}
-          title: "Automatic release: v${{ env.NEW_VERSION_NAME }} (${{ env.NEW_VERSION_CODE }})"
-          body: "This PR updates the version-name to v${{ env.NEW_VERSION_NAME }} and increments the version-code to ${{ env.NEW_VERSION_CODE }}."
+          title: "Version bump: v${{ env.NEW_VERSION_NAME }} (${{ env.NEW_VERSION_CODE }})"
+          body: "This PR updates the version-name to v${{ env.NEW_VERSION_NAME }} and increments the version-code to ${{ env.NEW_VERSION_CODE }}. Merge it when you want to cut a GitHub release (run the Release workflow manually afterwards)."
           labels: auto-update
           author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
           committer: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
