@@ -8,5 +8,4 @@ application {
 }
 
 dependencies {
-    implementation(projects.ciActions.base)
 }

@@ -15,8 +15,7 @@ Fork of the official Ratio repo by clicking on the badge: [![Fork Ratio](https:/
 1. Browse **[Ratio Issues](https://github.com/Pranesh-Selvaraj/Ratio/issues)**.
 2. Choose an issue that you understand and like.
 > Didn't find anything fitting? Try **[creating a new issue](https://github.com/Pranesh-Selvaraj/Ratio/issues/new/choose)**.
-3. ⚠️ Comment **exactly** **`I'm on it`** on that issue for GitHub Actions to automatically assign it to you.
-> Note: Automated assigning can take up to 5 minutes to take place.
+3. Comment on the issue to let the maintainer know you're taking it; it will be assigned manually.
 
 ### Contributing rules:
 1. Do **not** work on already assigned issues. Ask the assignee first. If more than 7 days have passed, comment and tag [@Pranesh-Selvaraj](https://github.com/Pranesh-Selvaraj) to unassign it.
