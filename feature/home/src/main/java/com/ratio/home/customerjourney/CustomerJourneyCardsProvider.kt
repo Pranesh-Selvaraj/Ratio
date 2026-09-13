@@ -7,7 +7,6 @@ import com.ratio.base.time.TimeProvider
 import com.ratio.data.db.dao.read.PlannedPaymentRuleDao
 import com.ratio.data.repository.TransactionRepository
 import com.ratio.design.l0_system.Gradient
-import com.ratio.design.l0_system.Green
 import com.ratio.design.l0_system.GreenLight
 import com.ratio.design.l0_system.Ratio
 import com.ratio.design.l0_system.Orange
@@ -133,22 +132,6 @@ class CustomerJourneyCardsProvider @Inject constructor(
       hasDismiss = true,
       onAction = { navigation, _, _ ->
         navigation.navigateTo(PieChartStatisticScreen(type = TransactionType.EXPENSE))
-      }
-    )
-
-    fun rateUsCard() = CustomerJourneyCardModel(
-      id = "rate_us",
-      condition = { trnCount, _, _, _ ->
-        trnCount >= 10
-      },
-      title = stringRes(R.string.review_ratio),
-      description = stringRes(R.string.review_ratio_description),
-      cta = stringRes(R.string.rate_us_on_google_play),
-      ctaIcon = R.drawable.ic_custom_star_s,
-      background = Gradient.solid(Green),
-      hasDismiss = true,
-      onAction = { _, _, ratioActivity ->
-        ratioActivity.reviewRatio(dismissReviewCard = true)
       }
     )
   }

@@ -247,7 +247,6 @@
     <string name="hide_income">Ukryj przychód</string>
     <string name="hide_income_description">Kliknij na ukryty przychód, aby je podświetlić na 5 sekund</string>
     <string name="other">Inne</string>
-    <string name="rate_us_on_google_play">Oceń nas w Google Play</string>
     <string name="share_ratio_wallet">Udostępnij Ratio</string>
     <string name="product">Produkt</string>
     <string name="danger_zone">Strefa zagrożenia</string>
@@ -387,8 +386,6 @@
     <string name="set_a_budget_description">Ratio nie tylko pomaga pasywnie śledzić wydatki, ale także proaktywnie kreować swoją przyszłość finansową poprzez ustalanie budżetów i trzymanie się ich.</string>
     <string name="expenses_piechart_description">Możesz zobaczyć strukturę wydatków według kategorii! Wypróbuj, dotknij szaro-czarnego przycisku Wydatki tuż pod saldem.</string>
     <string name="expenses_piechart">Wykres kołowy wydatków</string>
-    <string name="review_ratio">Zrecenzuj Ratio</string>
-    <string name="review_ratio_description">Podziel się swoją opinią! Pomóż Ratio stać się lepszym i rozwijać, pisząc nam recenzję. Komplementy, pomysły i krytyka są mile widziane! Dołożymy wszelkich starań.\n\nPozdrawiamy,\nRatio Team</string>
     <string name="help_us_grow">Pomóż nam się rozwijać, abyśmy mogli inwestować więcej w rozwój i ulepszać aplikację dla Ciebie. Udostępniając Ratio, uszczęśliwisz dwóch programistów, a także pomożesz przyjacielowi przejąć kontrolę nad ich finansami.</string>
     <string name="share_with_friends">Podziel się ze znajomymi</string>
     <string name="make_a_report_description">Możesz generować raporty, aby uzyskać szczegółowe informacje na temat swoich dochodów i wydatków. Filtruj transakcje według typu, okresu, kategorii, kont, kwoty, słów kluczowych i innych, aby uzyskać lepszy wgląd w swoje finanse.</string>

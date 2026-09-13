@@ -61,7 +61,6 @@ import com.ratio.wallet.domain.data.RatioCurrency
 import com.ratio.wallet.ui.theme.Blue
 import com.ratio.wallet.ui.theme.Gradient
 import com.ratio.wallet.ui.theme.GradientGreen
-import com.ratio.wallet.ui.theme.GradientRatio
 import com.ratio.wallet.ui.theme.Gray
 import com.ratio.wallet.ui.theme.MediumBlack
 import com.ratio.wallet.ui.theme.Red
@@ -409,16 +408,6 @@ private fun BoxWithConstraintsScope.UI(
             Spacer(Modifier.height(16.dp))
 
             val rootScreen = rootScreen()
-            SettingsPrimaryButton(
-                icon = R.drawable.ic_custom_star_m,
-                text = stringResource(R.string.rate_us_on_google_play),
-                backgroundGradient = GradientRatio
-            ) {
-                rootScreen.reviewRatio(dismissReviewCard = false)
-            }
-
-            Spacer(Modifier.height(12.dp))
-
             SettingsPrimaryButton(
                 icon = R.drawable.ic_custom_family_m,
                 text = stringResource(R.string.share_ratio_wallet),

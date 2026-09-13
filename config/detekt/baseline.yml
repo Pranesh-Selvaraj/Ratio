@@ -1163,7 +1163,6 @@
     <ID>FunctionNaming:CoreLibraryDesugaringConfigurationAccessors.kt$internal fun DependencyHandler.`coreLibraryDesugaring`(dependencyNotation: Any): Dependency?</ID>
     <ID>FunctionNaming:CustomerJourneyCardsProvider.kt$CustomerJourneyCardsProvider.Companion$fun didYouKnow_expensesPieChart()</ID>
     <ID>FunctionNaming:CustomerJourneyCardsProvider.kt$CustomerJourneyCardsProvider.Companion$fun didYouKnow_pinAddTransactionWidgetCard()</ID>
-    <ID>FunctionNaming:CustomerJourneyCardsProvider.kt$CustomerJourneyCardsProvider.Companion$fun rateUsCard_2()</ID>
     <ID>FunctionNaming:DebugAnnotationProcessorConfigurationAccessors.kt$internal fun &lt;T : ModuleDependency&gt; DependencyHandler.`debugAnnotationProcessor`( dependency: T, dependencyConfiguration: T.() -&gt; Unit ): T</ID>
     <ID>FunctionNaming:DebugAnnotationProcessorConfigurationAccessors.kt$internal fun ArtifactHandler.`debugAnnotationProcessor`( artifactNotation: Any, configureAction: ConfigurablePublishArtifact.() -&gt; Unit ): PublishArtifact</ID>
     <ID>FunctionNaming:DebugAnnotationProcessorConfigurationAccessors.kt$internal fun ArtifactHandler.`debugAnnotationProcessor`(artifactNotation: Any): PublishArtifact</ID>
@@ -5000,8 +4999,6 @@
     <ID>NoImplicitFunctionReturnType:CustomerJourneyCardsProvider.kt$CustomerJourneyCardsProvider.Companion$fun ratioIsOpenSource()</ID>
     <ID>NoImplicitFunctionReturnType:CustomerJourneyCardsProvider.kt$CustomerJourneyCardsProvider.Companion$fun joinRatioTelegramCard()</ID>
     <ID>NoImplicitFunctionReturnType:CustomerJourneyCardsProvider.kt$CustomerJourneyCardsProvider.Companion$fun joinTelegram2()</ID>
-    <ID>NoImplicitFunctionReturnType:CustomerJourneyCardsProvider.kt$CustomerJourneyCardsProvider.Companion$fun rateUsCard()</ID>
-    <ID>NoImplicitFunctionReturnType:CustomerJourneyCardsProvider.kt$CustomerJourneyCardsProvider.Companion$fun rateUsCard_2()</ID>
     <ID>NoImplicitFunctionReturnType:CustomerJourneyCardsProvider.kt$CustomerJourneyCardsProvider.Companion$fun shareRatioCard()</ID>
     <ID>NoImplicitFunctionReturnType:DateExt.kt$fun LocalDateTime.millis()</ID>
     <ID>NoImplicitFunctionReturnType:DateExt.kt$fun LocalDateTime.toEpochSeconds()</ID>

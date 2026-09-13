@@ -18,8 +18,6 @@ interface RootScreen {
      */
     val buildVersionCode: Int
 
-    fun reviewRatio(dismissReviewCard: Boolean)
-
     fun shareRatio()
 
     fun openUrlInBrowser(url: String)

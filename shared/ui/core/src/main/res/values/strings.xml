@@ -250,7 +250,6 @@
     <string name="hide_income">Hide income</string>
     <string name="hide_income_description">Tap on the hidden income to reveal it for 5s</string>
     <string name="other">Other</string>
-    <string name="rate_us_on_google_play">Rate us on Google Play</string>
     <string name="share_ratio_wallet">Share Ratio</string>
     <string name="product">Product</string>
     <string name="danger_zone">Danger zone</string>
@@ -391,8 +390,6 @@
     <string name="set_a_budget_description">Ratio not only helps you passively track your spending, but also empowers you to actively manage your financial future by setting and sticking to budgets.</string>
     <string name="expenses_piechart_description">You can view your spending breakdown by category! Give it a try by tapping the gray/black Expenses button located just below your balance.</string>
     <string name="expenses_piechart">Expenses Pie Chart</string>
-    <string name="review_ratio">Leave a review</string>
-    <string name="review_ratio_description">Share your feedback with us! Help Ratio improve and grow by leaving a review. We appreciate compliments, suggestions, and constructive criticism! Your input is essential to our ongoing efforts to enhance the app.\n\nCheers,\nThe Ratio Team</string>
     <string name="help_us_grow">Help us grow! Your support allows us to invest more in development and improve the app for you. By sharing Ratio, you not only bring joy to all contributors, but you also help a friend take control of their finances.</string>
     <string name="share_with_friends">Share with friends</string>
     <string name="make_a_report_description">Generate detailed reports to gain valuable insights into your income and spending. Filter your transactions by type, time period, category, accounts, amount, keywords, and more to better manage your finances.</string>

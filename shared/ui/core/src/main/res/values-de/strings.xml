@@ -246,7 +246,6 @@
     <string name="hide_income">Einnahmen ausblenden</string>
     <string name="hide_income_description">Klicke auf die ausgeblendete Einnahme, um den Wert für 5s anzuzeigen</string>
     <string name="other">Ander</string>
-    <string name="rate_us_on_google_play">Bewerte uns auf Google Play</string>
     <string name="share_ratio_wallet">Ratio teilen</string>
     <string name="product">Produkt</string>
     <string name="danger_zone">Danger-Zone</string>
@@ -385,8 +384,6 @@
     <string name="set_a_budget_description">Ratio hilft dir nicht nur, deine Ausgaben passiv zu verfolgen, sondern auch proaktiv deine finanzielle Zukunft zu gestalten, indem du Budgets festlegst und dich an sie hältst.</string>
     <string name="expenses_piechart_description">Du kannst deine Ausgabenstruktur nach Kategorien sehen! Probiere es aus: Tippe auf die graue/schwarze Schaltfläche Ausgaben direkt unter deiner Bilanz.</string>
     <string name="expenses_piechart">Ausgaben Kreisdiagramm</string>
-    <string name="review_ratio">Ratio bewerten</string>
-    <string name="review_ratio_description">Gib uns dein Feedback! Hilf Ratio, besser zu werden und zu wachsen, indem du uns eine Bewertung schreibst. Komplimente, Ideen und Kritik sind willkommen! Wir tun unser Bestes.\n\nDanke,\nRatio Team</string>
     <string name="help_us_grow">Hilf uns zu wachsen, damit wir mehr in die Entwicklung investieren und die App für dich besser machen können. Wenn du Ratio teilst, machst du zwei Entwickler glücklich und hilfst einem*r Freund*in, seine*ihre Finanzen in den Griff zu bekommen.</string>
     <string name="share_with_friends">Mit Freund*innen teilen</string>
     <string name="make_a_report_description">Du kannst Berichte erstellen, um tiefe Einblicke in deine Einnahmen und Ausgaben zu erhalten. Filtere deine Transaktionen nach Art, Zeitraum, Kategorie, Konten, Betrag, Schlüsselwörtern und mehr, um einen besseren Überblick über deine Finanzen zu erhalten.</string>

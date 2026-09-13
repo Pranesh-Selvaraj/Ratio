@@ -252,7 +252,6 @@
     <string name="hide_income_description">Toca los ingresos ocultos para mostrarlos por 5 segundos</string>
     <string name="report_bug">Informar de un error</string>
     <string name="other">Otro</string>
-    <string name="rate_us_on_google_play">Califícanos en Google Play</string>
     <string name="share_ratio_wallet">Compartir Ratio</string>
     <string name="product">Producto</string>
     <string name="danger_zone">Zona peligrosa</string>
@@ -392,8 +391,6 @@
     <string name="set_a_budget_description">Ratio no solo lo ayuda a realizar un seguimiento pasivo de sus gastos, sino que también crea proactivamente su futuro financiero estableciendo presupuestos y ajustándose a ellos.</string>
     <string name="expenses_piechart_description">¡Puedes ver tu estructura de gastos por categorías! Pruébelo, toque el botón Gastos gris/negro justo debajo de su saldo.</string>
     <string name="expenses_piechart">Gráfico circular de gastos</string>
-    <string name="review_ratio">Danos tu opinión de Ratio</string>
-    <string name="review_ratio_description">¡Danos tu opinión! Ayude a Ratio a mejorar y crecer escribiéndonos una reseña. ¡Los elogios, las ideas y las críticas son bienvenidos! Hacemos nuestro mejor esfuerzo.\n\nSaludos,\nEquipo Ratio</string>
     <string name="help_us_grow">Ayúdanos a crecer para que podamos invertir más en desarrollo y mejorar la aplicación para ti. Al compartir Ratio, hará felices a dos desarrolladores y también ayudará a un amigo a tomar el control de sus finanzas.</string>
     <string name="share_with_friends">Compartir con amigos</string>
     <string name="make_a_report_description">Puede generar informes para obtener información detallada sobre sus ingresos y gastos. Filtre sus transacciones por tipo, período de tiempo, categoría, cuentas, cantidad, palabras clave y más para obtener una mejor visión de sus finanzas.</string>

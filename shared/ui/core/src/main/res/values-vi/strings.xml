@@ -246,7 +246,6 @@
     <string name="hide_income">Ẩn khoản thu</string>
     <string name="hide_income_description">Nhấn vào khoản thu bị ẩn để hiển thị trong 5 giây</string>
     <string name="other">Khác</string>
-    <string name="rate_us_on_google_play">Đánh giá Iyv trên Google Play</string>
     <string name="share_ratio_wallet">Chia sẻ Ratio</string>
     <string name="product">Dịch vụ</string>
     <string name="danger_zone">Nguy hiểm</string>
@@ -386,8 +385,6 @@
     <string name="set_a_budget_description">Ratio không chỉ giúp bạn theo dõi chi tiêu một cách chủ động mà còn giúp bạn quản lý tài chính trong tương lại bằng cách thiết lập và tuân thủ ngân sách.</string>
     <string name="expenses_piechart_description">Bạn có thể xem cơ cấu chi tiêu của mình theo danh mục! Hãy thử bằng cách nhấn vào nút Chi phí màu xám/đen ngay bên dưới số dư của bạn.</string>
     <string name="expenses_piechart">Biểu đồ chi phí</string>
-    <string name="review_ratio">Để lại đánh giá</string>
-    <string name="review_ratio_description">Hãy cho chúng tôi biết được đánh giá của bạn! Sẽ là sự hỗ trợ rất lớn cho Ratio để cải thiện và phát triển bằng cách để lại đánh giá. Chúng tôi hoan nghênh những lời khen ngợi, ý tưởng và những lời phê bình! Ý kiến đóng góp của bạn là vô giá trong nỗ lực không ngừng của chúng tôi nhằm nâng cao ứng dụng.\n\nCảm ơn,\nRatio Team</string>
     <string name="help_us_grow">Hãy giúp chúng tôi lớn mạnh hơn nữa để chúng tôi có thể đầu tư nhiều hơn vào việc phát triển và cải thiện ứng dụng này. Bằng cách chia sẻ Ratio, điều đó sẽ giúp cho tất cả những người đóng góp xây dựng Ratio cảm thấy hạn phúc và cũng sẽ giúp được bạn của chúng ta kiểm soát tài chính của họ tốt hơn.</string>
     <string name="share_with_friends">Chia sẻ với bạn bè</string>
     <string name="make_a_report_description">Bạn có thể tạo báo cáo để hiểu sâu hơn về thu nhập và chi tiêu của mình. Phân loại các giao dịch của bạn theo loại, khoảng thời gian, danh mục, tài khoản, số tiền, từ khóa, v.v. để xử lý tốt hơn về tài chính của bạn.</string>

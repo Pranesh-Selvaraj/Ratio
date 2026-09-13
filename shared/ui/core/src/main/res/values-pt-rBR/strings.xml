@@ -246,7 +246,6 @@
     <string name="hide_income">Ocultar renda</string>
     <string name="hide_income_description">Toque na renda oculta para revelá-la por 5s</string>
     <string name="other">Outro</string>
-    <string name="rate_us_on_google_play">Avalie-nos no Google Play</string>
     <string name="share_ratio_wallet">Compartilhe a carteira Ratio</string>
     <string name="product">Produto</string>
     <string name="danger_zone">Zona de perigo</string>
@@ -387,8 +386,6 @@
     <string name="set_a_budget_description">A Ratio ajuda você não apenas a monitorar passivamente suas despesas, mas também a gerenciar proativamente seu futuro financeiro, definindo e cumprindo orçamentos.</string>
     <string name="expenses_piechart_description">Você pode ver sua estrutura de despesas por categoria! Experimente tocando no botão cinza/preto de Despesas logo abaixo do seu saldo.</string>
     <string name="expenses_piechart">Gráfico circular de despesas</string>
-    <string name="review_ratio">Deixe um comentário</string>
-    <string name="review_ratio_description">Dê-nos seu feedback! Ajude a Ratio a melhorar e crescer deixando um comentário. Aceitamos elogios, ideias e críticas! Sua opinião é inestimável em nossos esforços contínuos para melhorar o aplicativo.\n\nFelicidades,\nEquipe Ratio</string>
     <string name="help_us_grow">Ajude-nos a crescer para que possamos investir mais no desenvolvimento e tornar o aplicativo melhor para você. Ao compartilhar a Ratio, você deixará todos os colaboradores felizes e também ajudará um amigo a controlar suas finanças.</string>
     <string name="share_with_friends">Compartilhar com amigos</string>
     <string name="make_a_report_description">Você pode gerar relatórios para obter informações detalhadas sobre suas receitas e despesas. Filtre suas transações por tipo, período, categoria, contas, valor, palavras-chave e muito mais para controlar melhor suas finanças.</string>

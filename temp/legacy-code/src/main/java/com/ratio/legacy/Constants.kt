@@ -14,7 +14,7 @@ object Constants {
 
     const val URL_RATIO_GITHUB = "https://github.com/Pranesh-Selvaraj/Ratio/issues"
 
-    const val URL_RATIO_GOOGLE_PLAY =
+    const val URL_RATIO_RELEASES =
         "https://github.com/Pranesh-Selvaraj/Ratio/releases"
 
     const val CATEGORY_UNSPECIFIED_NAME = "Unspecified"

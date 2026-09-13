@@ -29,7 +29,6 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat
-import com.google.android.play.core.review.ReviewManagerFactory
 import com.ratio.RatioNavGraph
 import com.ratio.base.legacy.Theme
 import com.ratio.base.time.TimeConverter
@@ -38,7 +37,6 @@ import com.ratio.design.api.RatioDesign
 import com.ratio.design.api.RatioUI
 import com.ratio.design.system.RatioMaterial3Theme
 import com.ratio.domain.RootScreen
-import com.ratio.home.customerjourney.CustomerJourneyCardsProvider
 import com.ratio.legacy.Constants
 import com.ratio.legacy.RatioCtx
 import com.ratio.legacy.appDesign
@@ -66,9 +64,6 @@ class RootActivity : AppCompatActivity(), RootScreen {
 
     @Inject
     lateinit var navigation: Navigation
-
-    @Inject
-    lateinit var customerJourneyLogic: CustomerJourneyCardsProvider
 
     @Inject
     lateinit var timeConverter: TimeConverter
@@ -377,7 +372,7 @@ class RootActivity : AppCompatActivity(), RootScreen {
         val share = Intent.createChooser(
             Intent().apply {
                 action = Intent.ACTION_SEND
-                putExtra(Intent.EXTRA_TEXT, Constants.URL_RATIO_GOOGLE_PLAY)
+                putExtra(Intent.EXTRA_TEXT, Constants.URL_RATIO_RELEASES)
                 type = "text/plain"
             },
             null
@@ -429,32 +424,6 @@ class RootActivity : AppCompatActivity(), RootScreen {
         get() = BuildConfig.VERSION_NAME
     override val buildVersionCode: Int
         get() = BuildConfig.VERSION_CODE
-
-    override fun reviewRatio(dismissReviewCard: Boolean) {
-        val manager = ReviewManagerFactory.create(this)
-        val request = manager.requestReviewFlow()
-        request.addOnCompleteListener { task ->
-            if (task.isSuccessful) {
-                // We got the ReviewInfo object
-                val reviewInfo = task.result
-                reviewInfo.let { review ->
-                    val flow = manager.launchReviewFlow(this, review!!)
-                    flow.addOnCompleteListener {
-                        // The flow has finished. The API does not indicate whether the user
-                        // reviewed or not, or even whether the review dialog was shown. Thus, no
-                        // matter the result, we continue our app flow.
-                        if (dismissReviewCard) {
-                            customerJourneyLogic.dismissCard(CustomerJourneyCardsProvider.rateUsCard())
-                        }
-
-                        openGooglePlayAppPage(packageName)
-                    }
-                }
-            } else {
-                openGooglePlayAppPage(packageName)
-            }
-        }
-    }
 
     override fun <T> pinWidget(widget: Class<T>) {
         val appWidgetManager: AppWidgetManager = this.getSystemService(AppWidgetManager::class.java)

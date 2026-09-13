@@ -244,7 +244,6 @@
     <string name="hide_balance">Дүн нуух</string>
     <string name="hide_balance_description">Нуугдсан дүн дээр дарвал 5 секунд харагдана</string>
     <string name="other">Бусад</string>
-    <string name="rate_us_on_google_play">Google Play дээр үнэлгээ өгөх</string>
     <string name="share_ratio_wallet">Ratio Хэтэвчийг түгээх</string>
     <string name="product">Бүтээгдэхүүн</string>
     <string name="danger_zone">Аюултай бүс</string>
@@ -384,8 +383,6 @@
     <string name="set_a_budget_description">Ratio Хэтэвч танд зөвхөн өөрийн санхүүгээ хянахад туслаад зогсохгүй, төсөв үүсгэж, түүнийгээ мөрдөхөд тусалдаг.</string>
     <string name="expenses_piechart_description">Зарлагуудаа ангиллаар нь задалж хараарай! Дансны үлдэгдлийн доор байгаа Зардлууд гэсэн саарал товчин дээр дараад туршаад үзээрэй.</string>
     <string name="expenses_piechart">Зарлагын PieChart</string>
-    <string name="review_ratio">Ratio Хэтэвч-г үнэлэх</string>
-    <string name="review_ratio_description">Санал бодлоо хуваалцаач! Ratio Хэтэвчийг илүү сайн болоход нэмэр болж сэтгэгдлээ үлдээгээрэй. Магтаал, шинэ санаа, шүүмж, бүгд нээлттэй! Бид хичээж байна.\n\Амжилт,\nRatio-н хамт олон</string>
     <string name="help_us_grow">Биднийг дэмжиж аппаа илүү сайжруулахад туслаарай. Ratio Хэтэвчийг найздаа түгээснээр та түүнд санхүүгээ хянахад туслахаас гадна хоёр хөгжүүлэгчийг их баярлуулна шүү.</string>
     <string name="share_with_friends">Найзууддаа түгээх</string>
     <string name="make_a_report_description">Та өөрийн орлого зарлагын талаар дэлгэрэнгүй тайлан үүсгэх боломжтой. Гүйлгээний төрөл, хугацаа, ангилал, данс, дүн, түлхүүр үгс зэргээг шүүж өөрийн санхүүгийн нарийвчилсан мэдээллийг аваарай.</string>

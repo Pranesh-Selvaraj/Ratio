@@ -244,7 +244,6 @@
     <string name="hide_balance">Скрыть баланс</string>
     <string name="hide_balance_description">Нажмите на скрытый баланс, чтобы показать его на 5 секунд</string>
     <string name="other">Другое</string>
-    <string name="rate_us_on_google_play">Оцените нас в Google Play</string>
     <string name="share_ratio_wallet">Поделитесь Ratio</string>
     <string name="product">Продукт</string>
     <string name="danger_zone">Опасная зона</string>
@@ -384,8 +383,6 @@
     <string name="set_a_budget_description">Ratio помогает не только пассивно отслеживать ваш бюджет, но и проактивно создавать ваше финансовое будущее, задавая бюджеты и придерживаясь его.</string>
     <string name="expenses_piechart_description">Вы можете видеть структуру ваших расходов по категориям! Попробуйте, нажмите на серую/чёрную кнопку \"Расходы\" прямо под вашим балансом.</string>
     <string name="expenses_piechart">Круговая диаграмма Расходов</string>
-    <string name="review_ratio">Оцените Ratio</string>
-    <string name="review_ratio_description">Поделитесь обратной связью! Помогите Ratio стать лучше и вырасти, оставив нам отзыв. Комплименты, идеи и критика приветствуются! Мы очень стараемся.\n\С наилучшими пожеланиями,\nКоманда Ratio.</string>
     <string name="help_us_grow">Помогите нам расти, чтобы мы могли больше вкладываться в разработку и делать приложение лучше для вас. Если вы поделитесь Ratio, вы обрадуете двух разработчиков и поможете друзьям взять под контроль их финансы.</string>
     <string name="share_with_friends">Поделитесь с друзьями</string>
     <string name="make_a_report_description">Вы можете генерировать отчёты, чтобы получить глубокое понимание ваших доходов и трат. Фильтруйте ваши транзакции по типу, периоду времени, категории, учётным записям, количеству, ключевым словам и многому другому, чтобы получить более репрезентативную картину ваших финансов.</string>
