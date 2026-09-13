@@ -204,5 +204,4 @@ digraph G {
 ":widget:shared-base" -> ":shared:domain"
 ":shared:data:core-testing" -> ":shared:data:core"
 ":shared:data:model-testing" -> ":shared:data:model"
-":shared:ui:testing" -> ":shared:ui:core"
 }

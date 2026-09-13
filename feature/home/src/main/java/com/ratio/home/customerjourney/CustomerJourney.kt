@@ -44,7 +44,7 @@ fun CustomerJourney(
 ) {
     val ratioContext = ratioCtx()
     val nav = navigation()
-    // Check is added for Paparazzi Test where context is different
+    // Context can be different in previews/tests
     if (LocalContext.current is RootScreen) {
         val rootScreen = rootScreen()
 

@@ -7,4 +7,3 @@ This is Ratio's Developer Guidelines wiki. We recommend the following reading or
 3. **[Architecture](./Architecture.md)**
 4. **[Screen Architecture](./Screen-Architecture.md)**
 5. **[Unit Testing](./Unit-Testing.md)**
-6. **[Screenshot Testing](./Screenshot-Testing.md)**

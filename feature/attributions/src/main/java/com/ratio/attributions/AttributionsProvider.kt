@@ -93,14 +93,6 @@ class AttributionsProvider @Inject constructor() {
             link = "https://github.com/JakeWharton/timber"
         ),
         AttributionItem.Attribution(
-            name = "Detekt",
-            link = "https://github.com/detekt/detekt"
-        ),
-        AttributionItem.Attribution(
-            name = "Ktlint",
-            link = "https://github.com/pinterest/ktlint"
-        ),
-        AttributionItem.Attribution(
             name = "Slack's compose-lints",
             link = "https://slackhq.github.io/compose-lints"
         )

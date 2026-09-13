@@ -5,7 +5,6 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven(url = "https://jitpack.io")
         gradlePluginPortal()
     }
 }
@@ -45,7 +44,6 @@ include(":shared:data:model-testing")
 include(":shared:domain")
 include(":shared:ui:core")
 include(":shared:ui:navigation")
-include(":shared:ui:testing")
 include(":temp:legacy-code")
 include(":temp:old-design")
 include(":widget:add-transaction")
